@@ -1,5 +1,6 @@
 <!doctype html>
-<!-- Source for og-image.png (1200×630). Regenerate after editing — see CLAUDE.md. Not linked from the site. -->
+<!-- Source for og-image.jpg (portrait 1080×1350, 4:5). Regenerate after editing — see CLAUDE.md. Not linked from the site.
+     Platforms that force 1.91:1 (Facebook, LinkedIn, X) centre-crop to roughly y 392–957, so the headline sits in that band. -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -8,55 +9,54 @@
 <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@600;700&family=Instrument+Serif:ital@1&family=Plus+Jakarta+Sans:wght@500;700&family=Space+Grotesk:wght@700&family=Space+Mono:wght@700&display=block" rel="stylesheet">
 <style>
   * { box-sizing: border-box; margin: 0; }
-  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  html, body { width: 1080px; height: 1350px; overflow: hidden; }
   body {
     font-family: 'Plus Jakarta Sans', sans-serif; color: #1e1915;
     background:
-      radial-gradient(circle at 10% 12%, rgba(249,191,59,.45), transparent 42%),
-      radial-gradient(circle at 92% 18%, rgba(232,78,27,.25), transparent 44%),
-      radial-gradient(circle at 80% 95%, rgba(15,94,71,.22), transparent 46%),
+      radial-gradient(circle at 12% 8%, rgba(249,191,59,.45), transparent 40%),
+      radial-gradient(circle at 92% 30%, rgba(232,78,27,.25), transparent 42%),
+      radial-gradient(circle at 20% 92%, rgba(15,94,71,.22), transparent 44%),
       #faeed7;
     position: relative;
   }
   .pattern { position: absolute; inset: 0; opacity: .8;
     background-image: url("data:image/svg+xml,%3Csvg width='160' height='160' viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23e84e1b' stroke-opacity='0.13' stroke-width='1.2'%3E%3Cpath d='M80 0 L160 80 L80 160 L0 80 Z' stroke-dasharray='4 4'/%3E%3Cpath d='M80 22 L138 80 L80 138 L22 80 Z' stroke='%230f5e47' stroke-opacity='0.11'/%3E%3Ccircle cx='80' cy='80' r='18'/%3E%3Ccircle cx='80' cy='80' r='8' stroke-dasharray='2 3'/%3E%3C/g%3E%3C/svg%3E");
     background-size: 160px 160px; }
-  .wm { position: absolute; left: 36px; bottom: -40px; font: 700 210px/1 'Hind Siliguri'; color: #e84e1b; opacity: .07; transform: rotate(-6deg); }
-  .frame { position: absolute; inset: 28px; border: 3px solid #1e1915; border-radius: 34px;
-    box-shadow: 8px 8px 0 #1e1915; background: rgba(255,252,246,.55);
-    display: grid; grid-template-columns: 1.2fr .8fr; align-items: center; gap: 24px; padding: 0 46px 0 54px; }
-  .brand { display: flex; align-items: center; gap: 14px; font: 700 30px 'Space Grotesk'; letter-spacing: -.05em; }
-  .brand img { width: 56px; height: 56px; }
-  .brand .bn { font: 600 18px 'Hind Siliguri'; letter-spacing: 0; color: #e84e1b; background: rgba(232,78,27,.14); padding: 3px 12px; border-radius: 999px; }
-  .eyebrow { display: inline-block; margin-top: 30px; padding: 8px 18px; border: 2px solid #1e1915; border-radius: 999px;
-    background: #fff0be; box-shadow: 3px 3px 0 #1e1915; font: 700 15px 'Space Mono'; letter-spacing: .06em; text-transform: uppercase; }
-  h1 { font: 700 96px/.98 'Space Grotesk'; letter-spacing: -.055em; margin-top: 22px; }
+  .wm { position: absolute; right: -30px; top: 120px; font: 700 240px/1 'Hind Siliguri'; color: #e84e1b; opacity: .07; transform: rotate(8deg); }
+  .frame { position: absolute; inset: 32px; border: 3px solid #1e1915; border-radius: 40px;
+    box-shadow: 9px 9px 0 #1e1915; background: rgba(255,252,246,.55);
+    display: flex; flex-direction: column; align-items: center; text-align: center; padding: 58px 60px 0; }
+  .brand { display: flex; align-items: center; gap: 16px; font: 700 36px 'Space Grotesk'; letter-spacing: -.05em; }
+  .brand img { width: 64px; height: 64px; }
+  .brand .bn { font: 600 21px 'Hind Siliguri'; letter-spacing: 0; color: #e84e1b; background: rgba(232,78,27,.14); padding: 3px 14px; border-radius: 999px; }
+  .eyebrow { margin-top: 34px; padding: 9px 20px; border: 2px solid #1e1915; border-radius: 999px;
+    background: #fff0be; box-shadow: 3px 3px 0 #1e1915; font: 700 17px 'Space Mono'; letter-spacing: .06em; text-transform: uppercase; }
+  h1 { font: 700 118px/.98 'Space Grotesk'; letter-spacing: -.055em; margin-top: 150px; }
   h1 em { font: italic 400 1.06em 'Instrument Serif'; color: #e84e1b; letter-spacing: .01em; position: relative; display: inline-block; padding-right: .06em; }
-  h1 em::after { content: ""; position: absolute; left: 2%; right: 2%; bottom: 8px; height: 14px; background: #f9bf3b; opacity: .55; border-radius: 99px; transform: rotate(-1.5deg); z-index: -1; }
-  .lead { margin-top: 22px; font-size: 23px; font-weight: 500; color: #3a312a; }
-  .art { position: relative; background: linear-gradient(155deg, rgba(255,248,231,.95), rgba(255,233,196,.85));
-    border: 3px solid #1e1915; border-radius: 30px; padding: 14px; box-shadow: 6px 6px 0 #1e1915; }
+  h1 em::after { content: ""; position: absolute; left: 2%; right: 2%; bottom: 10px; height: 16px; background: #f9bf3b; opacity: .55; border-radius: 99px; transform: rotate(-1.5deg); z-index: -1; }
+  .lead { margin-top: 24px; max-width: 700px; font-size: 27px; font-weight: 500; line-height: 1.45; color: #3a312a; }
+  .art { position: relative; margin-top: 40px; width: 410px; background: linear-gradient(155deg, rgba(255,248,231,.95), rgba(255,233,196,.85));
+    border: 3px solid #1e1915; border-radius: 34px; padding: 14px; box-shadow: 7px 7px 0 #1e1915; }
   .art svg { display: block; width: 100%; height: auto; }
-  .badge { position: absolute; bottom: -18px; left: -26px; transform: rotate(-4deg); background: #fffdf8; border: 2px solid #1e1915;
-    border-radius: 16px; padding: 9px 16px; box-shadow: 4px 4px 0 #1e1915; font: 700 20px 'Hind Siliguri'; }
+  .badge { position: absolute; padding: 10px 18px; background: #fffdf8; border: 2px solid #1e1915; border-radius: 16px; box-shadow: 4px 4px 0 #1e1915; white-space: nowrap; }
+  .badge.bn { bottom: 34px; left: -150px; transform: rotate(-5deg); font: 700 23px 'Hind Siliguri'; }
+  .badge.hi { top: 40px; right: -150px; transform: rotate(4deg); font: 700 20px 'Plus Jakarta Sans'; background: #dcf2e9; }
 </style>
 </head>
 <body>
   <div class="pattern"></div>
   <div class="wm" lang="bn">আড্ডা</div>
   <div class="frame">
-    <div>
-      <div class="brand">
-        <img src="favicon.svg" alt="">
-        <span>bangali<span style="color:#e84e1b">adda.</span></span>
-        <span class="bn" lang="bn">লখনউ আড্ডা</span>
-      </div>
-      <span class="eyebrow">✳ Tehzeeb meets Addabazi · Lucknow</span>
-      <h1>Good vibes.<br><em>Great</em> adda.</h1>
-      <p class="lead">The community playbook for Bengalis in Lucknow — warm, respectful &amp; chaos-free.</p>
+    <div class="brand">
+      <img src="favicon.svg" alt="">
+      <span>bangali<span style="color:#e84e1b">adda.</span></span>
+      <span class="bn" lang="bn">লখনউ আড্ডা</span>
     </div>
+    <span class="eyebrow">✳ Tehzeeb meets Addabazi · Lucknow</span>
+    <h1>Good vibes.<br><em>Great</em> adda.</h1>
+    <p class="lead">The community playbook for Bengalis in Lucknow — warm, respectful &amp; chaos-free.</p>
     <div class="art">
-          <svg viewBox="0 0 520 520" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<svg viewBox="0 0 520 520" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <defs>
               <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse">
                 <circle cx="3" cy="3" r="2.2" fill="#e7a43e" opacity=".55"/>
@@ -111,7 +111,8 @@
             <path d="M96 140l10 19 21 3-16 14 5 22-20-11-20 11 4-22-16-14 22-3Z" fill="#fff7e9" stroke="#29251f" stroke-width="3"/>
             <path d="M430 250l8 15 16 2-12 11 3 16-15-8-14 8 3-16-12-11 16-2Z" fill="#f56b35" stroke="#29251f" stroke-width="3"/>
           </svg>
-      <div class="badge" lang="bn">এক কাপ চা হয়ে যাক? ☕</div>
+      <div class="badge bn" lang="bn">এক কাপ চা হয়ে যাক? ☕</div>
+      <div class="badge hi">🏛️ Rumi Darwaza × Howrah 🌉</div>
     </div>
   </div>
 </body>

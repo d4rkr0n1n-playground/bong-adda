@@ -164,7 +164,7 @@ Original inline SVG only. Use thick `#29251f` outlines (3–6px), flat warm fill
 ## 11. Brand icon and social card
 
 - **Favicon** (`assets/favicon.svg`): a 54px sindoor-gradient tile (`#e84e1b → #ff8547`) with a 3px ink border and a hard 4px ink offset shadow, holding a cream clay bhar with steam. It's the vector twin of `.brand-icon`. Don't use the ☕ emoji as an icon, because emoji render differently on every OS.
-- **OG card** (`assets/og-image.html` → `og-image.jpg`, 1200×630): cream mesh background with the jaali pattern, an inset brutal frame (3px border, 34px radius, 8px shadow), brand lockup, eyebrow, the hero headline with its serif accent and swash, a one-line lead, and the hero illustration with a Bengali float badge. Page-specific cards should keep this layout and change only the text.
+- **OG card** (`assets/og-image.html` → `og-image.jpg`, portrait 1080×1350, 4:5): cream mesh background with the jaali pattern and an inset brutal frame (3px border, 40px radius, 9px shadow). Stacked and centered: brand lockup, eyebrow, the hero headline with its serif accent and swash, a one-line lead, then the hero illustration with Bengali and Lucknow float badges. Keep the headline and lead inside the vertical band about y 392–957, because 1.91:1 platforms centre-crop to it. Page-specific cards should keep this layout and change only the text.
 
 ## 12. Interaction and accessibility
 
