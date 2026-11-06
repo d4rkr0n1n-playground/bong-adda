@@ -12,7 +12,7 @@ Commit: `4f469af`
 
 ### Done
 - **`CLAUDE.md`**: architecture notes for the single-file site: CSS-variable theming, the data-attribute-driven rules section, hard-coded rule counts, and the GitHub Pages deploy.
-- **`GEMINI.md`**: the same guidance for Gemini CLI (a separate copy, not a link).
+- **`GEMINI.md`** and **`AGENTS.md`**: the same guidance for Gemini CLI and for other agents (Codex, Cursor, Copilot, and others). These are separate copies, not links.
 - **Skill `.claude/skills/bong-adda-design/`**: `SKILL.md` (workflow, design rules, component catalog, checklist), `assets/starter.html` (a working page skeleton with `{{PLACEHOLDER}}`s), and `assets/design-system.css` (the stylesheet copied exactly from `index.html`).
 - **`DESIGN.md`**: the full design spec: tokens for both themes, type scale, shape and shadow, motion, background stack, components, breakpoints, voice, illustration, icon and OG card, and accessibility.
 - **Favicon set** in `assets/`: `favicon.svg` (a vector redraw of `.brand-icon` with a clay bhar), `favicon-32.png`, and `apple-touch-icon.png`.
@@ -31,5 +31,5 @@ Commit: `4f469af`
 - [ ] The OG and canonical URLs assume `https://d4rkr0n1n-playground.github.io/bong-adda/`. Update `index.html`, the starter, and `CLAUDE.md` if a custom domain is added.
 - [ ] The deploy uploads the whole repo root, so `.claude/`, the `*.md` docs, and `assets/og-image.html` are publicly served. Consider limiting the Pages artifact to `index.html` and `assets/` if that matters.
 - [ ] The skill's `starter.html` and `design-system.css` are copies of `index.html`. Re-sync them after any style change, and update `DESIGN.md` too.
-- [ ] `CLAUDE.md` and `GEMINI.md` are duplicates and need to be kept in sync (or switch Gemini to read `CLAUDE.md` via its `context.fileName` setting).
+- [ ] `CLAUDE.md`, `GEMINI.md`, and `AGENTS.md` are three copies of the same guidance and must be kept in sync. To consolidate, make `AGENTS.md` canonical: reduce `CLAUDE.md` to the single line `@AGENTS.md`, and set Gemini's `context.fileName` to `AGENTS.md`.
 - [ ] `README.md` is still a one-line stub.

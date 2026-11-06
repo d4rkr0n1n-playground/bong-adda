@@ -2,6 +2,8 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+`CLAUDE.md`, `GEMINI.md`, and `AGENTS.md` (for other agents) carry the same guidance. When you change one, update the other two.
+
 ## Project
 
 Bangali Adda Lucknow — a single-page community playbook (rules, etiquette, pledge) for a WhatsApp group. It is a static site with no build step, package manager, linter, or test suite.
@@ -38,8 +40,10 @@ Fonts in use: Plus Jakarta Sans (body), Space Grotesk (display), Instrument Seri
 - To regenerate after editing a source, run headless Chrome from the repo root (it needs network access for Google Fonts):
   ```sh
   CH="/c/Program Files/Google/Chrome/Application/chrome.exe"
-  "$CH" --headless=new --hide-scrollbars --force-device-scale-factor=1 --virtual-time-budget=8000     --window-size=1080,1350 --screenshot="$PWD/assets/og-image.jpg" "file:///$PWD/assets/og-image.html"
-  "$CH" --headless=new --hide-scrollbars --force-device-scale-factor=1 --default-background-color=00000000     --window-size=32,32 --screenshot="$PWD/assets/favicon-32.png" "file:///$PWD/assets/favicon.svg"
+  "$CH" --headless=new --hide-scrollbars --force-device-scale-factor=1 --virtual-time-budget=8000 \
+    --window-size=1080,1350 --screenshot="$PWD/assets/og-image.jpg" "file:///$PWD/assets/og-image.html"
+  "$CH" --headless=new --hide-scrollbars --force-device-scale-factor=1 --default-background-color=00000000 \
+    --window-size=32,32 --screenshot="$PWD/assets/favicon-32.png" "file:///$PWD/assets/favicon.svg"
   ```
   For `apple-touch-icon.png`, screenshot a 180×180 page with a `#faeed7` background and `favicon.svg` centered at 152px. Social platforms cache previews, so after deploying, re-scrape the page with a tool such as the Facebook Sharing Debugger.
 
