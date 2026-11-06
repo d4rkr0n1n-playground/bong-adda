@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e84e1b"/>
+      <stop offset="1" stop-color="#ff8547"/>
+    </linearGradient>
+  </defs>
+  <!-- Brutal offset shadow + sindoor tile (matches .brand-icon) -->
+  <rect x="7" y="7" width="54" height="54" rx="14" fill="#1e1915"/>
+  <rect x="3" y="3" width="54" height="54" rx="14" fill="url(#g)" stroke="#1e1915" stroke-width="3"/>
+  <!-- Steam -->
+  <g fill="none" stroke="#fff8ec" stroke-width="3" stroke-linecap="round">
+    <path d="M23 21c-2.5-2.5 2.5-4 0-7.5"/>
+    <path d="M30 20c-2.5-3 2.5-4.5 0-8"/>
+    <path d="M37 21c-2.5-2.5 2.5-4 0-7.5"/>
+  </g>
+  <!-- Clay bhar (kulhad) -->
+  <path d="M16.5 28h27l-3.6 18.5c-.7 3.6-4.6 5.5-9.9 5.5s-9.2-1.9-9.9-5.5Z" fill="#fff3dc" stroke="#1e1915" stroke-width="2.6" stroke-linejoin="round"/>
+  <ellipse cx="30" cy="28" rx="13.5" ry="4.2" fill="#ffdb92" stroke="#1e1915" stroke-width="2.6"/>
+  <ellipse cx="30" cy="28.6" rx="9.5" ry="2.2" fill="#7f3c25"/>
+  <path d="M21.5 41q8.5 3.5 17 0" fill="none" stroke="#e84e1b" stroke-width="2.4" stroke-linecap="round"/>
+</svg>
