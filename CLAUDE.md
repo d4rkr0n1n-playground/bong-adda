@@ -42,3 +42,7 @@ Fonts in use: Plus Jakarta Sans (body), Space Grotesk (display), Instrument Seri
   "$CH" --headless=new --hide-scrollbars --force-device-scale-factor=1 --default-background-color=00000000     --window-size=32,32 --screenshot="$PWD/assets/favicon-32.png" "file:///$PWD/assets/favicon.svg"
   ```
   For `apple-touch-icon.png`, screenshot a 180×180 page with a `#faeed7` background and `favicon.svg` centered at 152px. Social platforms cache previews, so after deploying, re-scrape the page with a tool such as the Facebook Sharing Debugger.
+
+## Session log
+
+`SESSIONS.md` records past sessions: what changed, decisions made, and open follow-ups. Read its latest entry when starting work, and add a new entry at the top when finishing a session.
