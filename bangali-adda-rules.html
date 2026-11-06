@@ -436,20 +436,26 @@
     }
 
     .small-btn {
-      border: 1.5px solid var(--line-strong);
-      background: var(--teal);
+      border: 2px solid var(--line-strong);
+      background: var(--sindoor);
       color: #fff;
       border-radius: 999px;
-      padding: 9px 17px;
+      padding: 9px 18px;
       font-size: 13.5px;
-      font-weight: 700;
+      font-weight: 800;
       text-decoration: none;
+      white-space: nowrap;
+      flex-shrink: 0;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
       box-shadow: 2px 2px 0 var(--line-strong);
-      transition: transform 0.2s, box-shadow 0.2s;
+      transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
     }
 
     [data-theme="dark"] .small-btn {
-      color: #091d16;
+      background: var(--turmeric);
+      color: #1a1410;
     }
 
     .small-btn:hover {
@@ -499,9 +505,11 @@
       font-family: var(--font-serif);
       font-style: italic;
       font-weight: 400;
+      font-size: 1.06em;
+      line-height: 1.05;
       color: var(--sindoor);
-      letter-spacing: -0.02em;
-      padding-right: 6px;
+      letter-spacing: 0.01em;
+      padding-right: 0.08em;
       position: relative;
       display: inline-block;
     }
@@ -630,26 +638,26 @@
     }
 
     .float-badge.top-left {
-      top: -14px;
-      left: -16px;
-      transform: rotate(-4deg);
+      top: -16px;
+      left: -14px;
+      transform: rotate(-3deg);
       background: var(--turmeric);
       color: #1e1915;
     }
 
     .float-badge.bottom-left {
-      bottom: 18px;
-      left: -22px;
-      transform: rotate(-5deg);
+      bottom: 68px;
+      left: -20px;
+      transform: rotate(-4deg);
       animation-delay: -1.8s;
       font-family: var(--font-bn);
       font-size: 15px;
     }
 
     .float-badge.bottom-right {
-      bottom: -14px;
-      right: -12px;
-      transform: rotate(3deg);
+      bottom: -18px;
+      right: -10px;
+      transform: rotate(2deg);
       background: var(--teal-soft);
       color: var(--ink);
       animation-delay: -3.2s;
@@ -712,8 +720,8 @@
       font-family: var(--font-display);
       font-weight: 800;
       font-size: clamp(34px, 4.8vw, 56px);
-      line-height: 1.04;
-      letter-spacing: -0.045em;
+      line-height: 1.08;
+      letter-spacing: -0.04em;
       margin: 14px 0 0;
     }
 
@@ -721,7 +729,11 @@
       font-family: var(--font-serif);
       font-style: italic;
       font-weight: 400;
+      font-size: 1.08em;
+      letter-spacing: 0.01em;
+      padding-right: 0.06em;
       color: var(--sindoor);
+      display: inline-block;
     }
 
     .bento-section {
@@ -895,6 +907,8 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
       margin-bottom: 20px;
       padding-bottom: 14px;
       border-bottom: 1.5px dashed var(--line);
@@ -903,6 +917,7 @@
     .vibe-head h3 {
       font-family: var(--font-display);
       font-size: 22px;
+      line-height: 1.2;
       margin: 0;
       display: flex;
       align-items: center;
@@ -914,6 +929,7 @@
       font-size: 11px;
       font-weight: 700;
       text-transform: uppercase;
+      white-space: nowrap;
       padding: 4px 10px;
       border-radius: 999px;
       border: 1.5px solid var(--line-strong);
@@ -1436,7 +1452,9 @@
        RESPONSIVE BREAKPOINTS
        ========================================================================== */
     @media (max-width: 960px) {
-      .nav-links {
+      .nav-links,
+      .status-pill,
+      .brand-bn {
         display: none;
       }
       .hero {
@@ -1464,29 +1482,135 @@
         width: calc(100% - 28px);
       }
       .header-sticky {
-        padding: 0 12px;
+        padding: 0 10px;
+        top: 10px;
       }
       .nav {
         height: 60px;
-        padding: 0 12px 0 14px;
+        padding: 0 10px 0 12px;
+        gap: 8px;
       }
-      .status-pill,
-      .brand-bn {
-        display: none;
+      .brand {
+        font-size: 18px;
+        gap: 8px;
+        min-width: 0;
+      }
+      .brand-icon {
+        width: 34px;
+        height: 34px;
+        font-size: 17px;
+        border-radius: 10px;
+        flex-shrink: 0;
+      }
+      .nav-actions {
+        gap: 8px;
+        flex-shrink: 0;
+      }
+      .theme-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 15px;
+        flex-shrink: 0;
+      }
+      .small-btn {
+        padding: 8px 14px;
+        font-size: 13px;
+      }
+      .eyebrow {
+        font-size: 10.5px;
+        padding: 5px 11px;
+        max-width: 100%;
+        white-space: normal;
+        line-height: 1.35;
+      }
+      .hero {
+        padding: 28px 0 52px;
+        gap: 28px;
       }
       .hero h1 {
-        font-size: clamp(46px, 14vw, 72px);
+        font-size: clamp(40px, 11.5vw, 56px);
+        line-height: 1.06;
+        letter-spacing: -0.035em;
+        margin: 18px 0 16px;
       }
-      .float-badge.top-left,
+      .hero h1 .serif-italic::after {
+        height: 7px;
+        bottom: 2px;
+      }
+      .section-title {
+        font-size: clamp(28px, 8vw, 38px);
+        line-height: 1.14;
+        letter-spacing: -0.025em;
+      }
+      .bento-card {
+        padding: 22px 18px;
+        border-radius: 22px;
+      }
+      .bento-main h3 {
+        font-size: 22px;
+        line-height: 1.22;
+      }
+      .vibe-box {
+        padding: 20px 16px;
+        border-radius: 22px;
+      }
+      .vibe-head {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+      }
+      .vibe-head h3 {
+        font-size: 19px;
+        line-height: 1.25;
+      }
+      .chat-bubble {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 12px 14px;
+      }
+      .chat-bubble .sender {
+        word-break: break-word;
+        overflow-wrap: anywhere;
+      }
+      .chat-verdict {
+        align-self: flex-start;
+      }
+      .float-badge.top-left {
+        position: static;
+        display: inline-flex;
+        margin: 0 0 12px 0;
+        transform: none;
+        animation: none;
+      }
+      .float-badge.bottom-left,
       .float-badge.bottom-right {
         position: static;
         display: inline-flex;
-        margin: 8px 6px 0 0;
+        margin: 10px 8px 0 0;
         transform: none;
+        animation: none;
+        font-size: 13px;
+        padding: 8px 12px;
       }
-      .float-badge.bottom-left {
-        bottom: 12px;
-        left: 12px;
+      .hero-btns .btn {
+        width: 100%;
+        justify-content: center;
+      }
+      .filter-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+      }
+      .filter {
+        justify-content: center;
+        padding: 9px 10px;
+        font-size: 12.5px;
+      }
+      .media-note {
+        align-items: flex-start;
+        padding: 16px;
+        gap: 12px;
       }
       .rules-grid {
         grid-template-columns: 1fr;
@@ -1498,7 +1622,16 @@
         width: 100%;
       }
       .pledge {
-        padding: 46px 20px;
+        padding: 40px 18px;
+        border-radius: 24px;
+      }
+      .pledge h2 {
+        font-size: clamp(26px, 7.5vw, 36px);
+        line-height: 1.15;
+      }
+      .pledge-actions .btn {
+        width: 100%;
+        justify-content: center;
       }
     }
 
