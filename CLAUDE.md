@@ -35,13 +35,13 @@ Fonts in use: Plus Jakarta Sans (body), Space Grotesk (display), Instrument Seri
 ## Social preview and icons
 
 - `assets/favicon.svg` is the master icon: a sindoor tile with a brutal shadow and a clay bhar, matching `.brand-icon`. `favicon-32.png` and `apple-touch-icon.png` (180px, on a cream background) are rendered from it.
-- `assets/og-image.jpg` (portrait 1080×1350, 4:5, ~125 KB; keep it under 300 KB or WhatsApp may skip the preview) is rendered from `assets/og-image.html`, which reuses the hero SVG from `index.html`. Platforms that force 1.91:1 (Facebook, LinkedIn, X) centre-crop it, so keep the headline in the middle band (about y 392–957).
+- `assets/og-image.jpg` (square 1200×1200, ~120 KB; keep it under 300 KB or WhatsApp may skip the preview) is rendered from `assets/og-image.html`, which reuses the hero SVG from `index.html`. Platforms that force 1.91:1 (Facebook, LinkedIn, X) centre-crop it, so keep the headline in the middle band (about y 286–914).
 - OG and Twitter image URLs in `<head>` are absolute and assume `https://d4rkr0n1n-playground.github.io/bong-adda/`. Update them if a custom domain is added.
 - To regenerate after editing a source, run headless Chrome from the repo root (it needs network access for Google Fonts):
   ```sh
   CH="/c/Program Files/Google/Chrome/Application/chrome.exe"
   "$CH" --headless=new --hide-scrollbars --force-device-scale-factor=1 --virtual-time-budget=8000 \
-    --window-size=1080,1350 --screenshot="$PWD/assets/og-image.jpg" "file:///$PWD/assets/og-image.html"
+    --window-size=1200,1200 --screenshot="$PWD/assets/og-image.jpg" "file:///$PWD/assets/og-image.html"
   "$CH" --headless=new --hide-scrollbars --force-device-scale-factor=1 --default-background-color=00000000 \
     --window-size=32,32 --screenshot="$PWD/assets/favicon-32.png" "file:///$PWD/assets/favicon.svg"
   ```
